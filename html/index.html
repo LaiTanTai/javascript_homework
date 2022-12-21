@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="container" id="bai1">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">Tính tiền lương</div>
+                    <div class="card-body">
+                        <div class="bai">
+                            <button><a href="#bai1">Bài 1</a></button>
+                            <button><a href="#bai2">Bài 2</a></button>
+                            <button><a href="#bai3">Bài 3</a></button>
+                            <button ><a href="#bai4">Bài 4</a></button>
+                            <button><a href="#bai5">Bài 5</a></button>
+                        </div>
+                        <p>
+                            Gợi ý:
+                            <br>
+                            Công thức: Lương = Lương 1 ngày * số ngày làm
+                        </p>
+                        <div class="form-group">
+                            <label>Nhập tiền lương 1 ngày </label>
+                            <input class="form-control" id="salary">
+                        </div>
+                        <div class="form-group">
+                            <label> Số ngày bạn đã làm?</label>
+                            <input class="form-control" id="day">
+                        </div>
+                        <div class="text-center">
+                           <button class="btn btn-danger" id="calculate1">Tính Nào</button>
+                        </div>    
+                       <!-- hiển thị kết quả  -->
+                       <div id="result-wrapper" style="display: none;">
+                        <P>Tính lương</P>
+                        <p id="result"></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <div class="container" id="bai2">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center"> Tính giá trị trung bình</div>
+                    <div class="card-body">
+                        <div class="bai">
+                            <button><a href="#bai1">Bài 1</a></button>
+                            <button><a href="#bai2">Bài 2</a></button>
+                            <button><a href="#bai3">Bài 3</a></button>
+                            <button ><a href="#bai4">Bài 4</a></button>
+                            <button><a href="#bai5">Bài 5</a></button>
+                        </div>
+                        <p>
+                            Gợi ý:
+                            <br>
+                            Công thức: Gía trị trung bình = (Tổng 5 số đã nhập)/5
+                        </p>
+                        <div class="form-group">
+                            <label>Nhập số thứ nhất</label>
+                            <input class="form-control" id="num_1">
+                        </div>
+                        <div class="form-group">
+                            <label>Nhập số thứ hai</label>
+                            <input class="form-control" id="num_2">
+                        </div>
+                        <div class="form-group">
+                            <label>Nhập số thứ ba</label>
+                            <input class="form-control" id="num_3">
+                        </div>
+                        <div class="form-group">
+                            <label>Nhập số thứ tư</label>
+                            <input class="form-control" id="num_4">
+                        </div>
+                        <div class="form-group">
+                            <label>Nhập số thứ năm</label>
+                            <input class="form-control" id="num_5">
+                        </div>
+                        <div class="text-center">
+                           <button class="btn btn-danger" id="calculate2">Tính trung bình</button>
+                        </div>    
+                       <!-- hiển thị kết quả  -->
+                       <div id="result-wrapper2" style="display: none;">
+                        <P>Tính trung bình</P>
+                        <p id="result2"></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <div class="container" id="bai3">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">Quy đổi tiền</div>
+                    <div class="card-body">
+                        <div class="bai">
+                            <button><a href="#bai1">Bài 1</a></button>
+                            <button><a href="#bai2">Bài 2</a></button>
+                            <button><a href="#bai3">Bài 3</a></button>
+                            <button ><a href="#bai4">Bài 4</a></button>
+                            <button><a href="#bai5">Bài 5</a></button>
+                        </div>
+                        <p>
+                            Gợi ý:
+                            <br>
+                            Công thức: Giá USD mặc định 1 USD = 23500
+                        </p>
+                        <div class="form-group">
+                            <label>Nhập số USD mà bạn muốn quy đổi</label>
+                            <input class="form-control" id="USD">
+                        </div>
+                        <div class="text-center">
+                           <button class="btn btn-danger" id="calculate3">chuyển đối</button>
+                        </div>    
+                       <!-- hiển thị kết quả  -->
+                       <div id="result-wrapper3" style="display: none;">
+                        <P>Quy đổi</P>
+                        <p id="result3"></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <div class="container" id="bai4">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">Tính diện tích, chu vi hình chữ nhật</div>
+                    <div class="card-body">
+                        <div class="bai">
+                            <button><a href="#bai1">Bài 1</a></button>
+                            <button><a href="#bai2">Bài 2</a></button>
+                            <button><a href="#bai3">Bài 3</a></button>
+                            <button ><a href="#bai4">Bài 4</a></button>
+                            <button><a href="#bai5">Bài 5</a></button>
+                        </div>
+                        <p>
+                            Gợi ý:
+                            <br>
+                            Công thức:
+                            <br>
+                            Diện tích: dài x rộng
+                            <br>
+                            Chu vi: (dài + rộng) x 2
+                        </p>
+                        <div class="form-group">
+                            <label>Nhập chiều dài của hình chữ nhật</label>
+                            <input class="form-control" id="CD">
+                        </div>
+                        <div class="form-group">
+                            <label>Nhập chiều rộng của hình chữ nhật</label>
+                            <input class="form-control" id="CR">
+                        </div>
+                        <div class="text-center">
+                           <button class="btn btn-danger" id="calculate4">Tính</button>
+                        </div>    
+                       <!-- hiển thị kết quả  -->
+                       <div id="result-wrapper4" style="display: none;">
+                        <p>Chu vi của hình chữ nhật là : <span id="result4"></span></p>
+                        
+                        <p>Diện tích của hình chữ nhật là : <span id="result5"></span></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <div class="container" id="bai5">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">Tính tổng 2 ký số</div>
+                    <div class="card-body">
+                        <div class="bai">
+                            <button><a href="#bai1">Bài 1</a></button>
+                            <button><a href="#bai2">Bài 2</a></button>
+                            <button><a href="#bai3">Bài 3</a></button>
+                            <button ><a href="#bai4">Bài 4</a></button>
+                            <button><a href="#bai5">Bài 5</a></button>
+                        </div>
+                        <p>
+                            Gợi ý:
+                            <br>
+                            Chia dư để tính tổng 2 ký số
+                        </p>
+                        <div class="form-group">
+                            <label>Nhập vào chữ số có 2 ký số</label>
+                            <input class="form-control" id="number">
+                        </div>
+                        <div class="text-center">
+                           <button class="btn btn-danger" id="calculate5">Tính Tổng</button>
+                        </div>    
+                       <!-- hiển thị kết quả  -->
+                       <div id="result-wrapper5" style="display: none;">
+                        <P>Tổng 2 ký số của n là : <span id="result6"></span></P>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/homework.js"></script>
+  </body>
+</html>
