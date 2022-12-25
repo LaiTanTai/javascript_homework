@@ -5,215 +5,229 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- My css -->
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <div class="container" id="bai1">
-        <div class="row">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <div class="card-header bg-danger text-white text-center">Tính tiền lương</div>
-                    <div class="card-body">
-                        <div class="bai">
-                            <button><a href="#bai1">Bài 1</a></button>
-                            <button><a href="#bai2">Bài 2</a></button>
-                            <button><a href="#bai3">Bài 3</a></button>
-                            <button ><a href="#bai4">Bài 4</a></button>
-                            <button><a href="#bai5">Bài 5</a></button>
-                        </div>
-                        <p>
-                            Gợi ý:
-                            <br>
-                            Công thức: Lương = Lương 1 ngày * số ngày làm
-                        </p>
-                        <div class="form-group">
-                            <label>Nhập tiền lương 1 ngày </label>
-                            <input class="form-control" id="salary">
-                        </div>
-                        <div class="form-group">
-                            <label> Số ngày bạn đã làm?</label>
-                            <input class="form-control" id="day">
-                        </div>
-                        <div class="text-center">
-                           <button class="btn btn-danger" id="calculate1">Tính Nào</button>
-                        </div>    
-                       <!-- hiển thị kết quả  -->
-                       <div id="result-wrapper" style="display: none;">
-                        <P>Tính lương</P>
-                        <p id="result"></p>
-                       </div>
-                    </div>
+    <div class="box">
+        <div class="content" >
+            <div class="table">
+                <ul>
+                    <li><button id="bai1"> <i class="fa-sharp fa-solid fa-book"></i>Bài 1</button></li>
+                    <li><button id="bai2"> <i class="fa-sharp fa-solid fa-book"></i>Bài 2</button></li>
+                    <li><button id="bai3"> <i class="fa-sharp fa-solid fa-book"></i>Bài 3</button></li>
+                    <li><button id="bai4"> <i class="fa-sharp fa-solid fa-book"></i>Bài 4</button></li>
+                    <li><button id="bai5"> <i class="fa-sharp fa-solid fa-book"></i>Bài 5</button></li>
+                    <li><button id="bai6"> <i class="fa-sharp fa-solid fa-book"></i>Bài 6</button></li>
+                    <li><button id="bai7"> <i class="fa-sharp fa-solid fa-book"></i>Bài 7</button></li>
+                    <li><button id="bai8"> <i class="fa-sharp fa-solid fa-book"></i>Bài 8</button></li>
+                </ul>
+            </div>
+            <div class="container" style="display: none;" id="b1">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Xuất 3 số theo thứ tự tăng dần</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào 3 số mà bạn muốn sắp xếp</p>
+                <input id="num-1" type="number" placeholder="Nhập số thứ nhất">
+                <input id="num-2" type="number" placeholder="Nhập số thứ hai">
+                <input id="num-3" type="number" placeholder="Nhập số thứ ba">
+                <br>
+                <button id="calc1">Sắp xếp</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    3 số được xếp theo thứ tự từ bé đến lớn 
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result1"></span></p>
                 </div>
             </div>
-        </div>
-     </div> 
-     <div class="container" id="bai2">
-        <div class="row">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <div class="card-header bg-danger text-white text-center"> Tính giá trị trung bình</div>
-                    <div class="card-body">
-                        <div class="bai">
-                            <button><a href="#bai1">Bài 1</a></button>
-                            <button><a href="#bai2">Bài 2</a></button>
-                            <button><a href="#bai3">Bài 3</a></button>
-                            <button ><a href="#bai4">Bài 4</a></button>
-                            <button><a href="#bai5">Bài 5</a></button>
-                        </div>
-                        <p>
-                            Gợi ý:
-                            <br>
-                            Công thức: Gía trị trung bình = (Tổng 5 số đã nhập)/5
-                        </p>
-                        <div class="form-group">
-                            <label>Nhập số thứ nhất</label>
-                            <input class="form-control" id="num_1">
-                        </div>
-                        <div class="form-group">
-                            <label>Nhập số thứ hai</label>
-                            <input class="form-control" id="num_2">
-                        </div>
-                        <div class="form-group">
-                            <label>Nhập số thứ ba</label>
-                            <input class="form-control" id="num_3">
-                        </div>
-                        <div class="form-group">
-                            <label>Nhập số thứ tư</label>
-                            <input class="form-control" id="num_4">
-                        </div>
-                        <div class="form-group">
-                            <label>Nhập số thứ năm</label>
-                            <input class="form-control" id="num_5">
-                        </div>
-                        <div class="text-center">
-                           <button class="btn btn-danger" id="calculate2">Tính trung bình</button>
-                        </div>    
-                       <!-- hiển thị kết quả  -->
-                       <div id="result-wrapper2" style="display: none;">
-                        <P>Tính trung bình</P>
-                        <p id="result2"></p>
-                       </div>
-                    </div>
+            <div class="container" style="display: none;" id="b2">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Chương trình "Chào hỏi"</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào thành viên trong gia đình bạn muốn gửi lời chào </p>
+                <select id="member">
+                    <option value="Cha">Cha</option>
+                    <option value="Mẹ">Mẹ</option>
+                    <option value="Anh">Anh</option>
+                    <option value="Em">Em</option>
+                </select>
+                <br>
+                <button id="calc2">Gửi lời chào</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Lời chào đến thành viên trong gia đình
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result2"></span></p>
                 </div>
             </div>
-        </div>
-     </div> 
-     <div class="container" id="bai3">
-        <div class="row">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <div class="card-header bg-danger text-white text-center">Quy đổi tiền</div>
-                    <div class="card-body">
-                        <div class="bai">
-                            <button><a href="#bai1">Bài 1</a></button>
-                            <button><a href="#bai2">Bài 2</a></button>
-                            <button><a href="#bai3">Bài 3</a></button>
-                            <button ><a href="#bai4">Bài 4</a></button>
-                            <button><a href="#bai5">Bài 5</a></button>
-                        </div>
-                        <p>
-                            Gợi ý:
-                            <br>
-                            Công thức: Giá USD mặc định 1 USD = 23500
-                        </p>
-                        <div class="form-group">
-                            <label>Nhập số USD mà bạn muốn quy đổi</label>
-                            <input class="form-control" id="USD">
-                        </div>
-                        <div class="text-center">
-                           <button class="btn btn-danger" id="calculate3">chuyển đối</button>
-                        </div>    
-                       <!-- hiển thị kết quả  -->
-                       <div id="result-wrapper3" style="display: none;">
-                        <P>Quy đổi</P>
-                        <p id="result3"></p>
-                       </div>
-                    </div>
+            <div class="container" style="display: none;" id="b3">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i>Đếm số chẵn lẻ</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào 3 số mà bạn muốn kiểm tra là số chẵn hay lẻ </p>
+                <input id="STT1" type="number" placeholder="Nhập số thứ nhất">
+                <input id="STT2" type="number" placeholder="Nhập số thứ hai">
+                <input id="STT3" type="number" placeholder="Nhập số thứ ba">
+                <br>
+                <button id="calc3">Đếm</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Có bao nhiêu số chẵn và bao nhiêu số lẻ
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result3"></span></p>
                 </div>
             </div>
-        </div>
-     </div> 
-     <div class="container" id="bai4">
-        <div class="row">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <div class="card-header bg-danger text-white text-center">Tính diện tích, chu vi hình chữ nhật</div>
-                    <div class="card-body">
-                        <div class="bai">
-                            <button><a href="#bai1">Bài 1</a></button>
-                            <button><a href="#bai2">Bài 2</a></button>
-                            <button><a href="#bai3">Bài 3</a></button>
-                            <button ><a href="#bai4">Bài 4</a></button>
-                            <button><a href="#bai5">Bài 5</a></button>
-                        </div>
-                        <p>
-                            Gợi ý:
-                            <br>
-                            Công thức:
-                            <br>
-                            Diện tích: dài x rộng
-                            <br>
-                            Chu vi: (dài + rộng) x 2
-                        </p>
-                        <div class="form-group">
-                            <label>Nhập chiều dài của hình chữ nhật</label>
-                            <input class="form-control" id="CD">
-                        </div>
-                        <div class="form-group">
-                            <label>Nhập chiều rộng của hình chữ nhật</label>
-                            <input class="form-control" id="CR">
-                        </div>
-                        <div class="text-center">
-                           <button class="btn btn-danger" id="calculate4">Tính</button>
-                        </div>    
-                       <!-- hiển thị kết quả  -->
-                       <div id="result-wrapper4" style="display: none;">
-                        <p>Chu vi của hình chữ nhật là : <span id="result4"></span></p>
-                        
-                        <p>Diện tích của hình chữ nhật là : <span id="result5"></span></p>
-                       </div>
-                    </div>
+            <div class="container" style="display: none;" id="b4">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Đoán hình tam giác</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào 3 cạnh </p>
+                <input id="c1" type="number" placeholder="Nhập cạnh thứ nhất">
+                <input id="c2" type="number" placeholder="Nhập cạnh thứ hai">
+                <input id="c3" type="number" placeholder="Nhập cạnh thứ ba">
+                <br>
+                <button id="calc4">Kiểm Tra</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Tam  giác này là tam giác gì ?
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result4"></span></p>
                 </div>
             </div>
-        </div>
-     </div> 
-     <div class="container" id="bai5">
-        <div class="row">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <div class="card-header bg-danger text-white text-center">Tính tổng 2 ký số</div>
-                    <div class="card-body">
-                        <div class="bai">
-                            <button><a href="#bai1">Bài 1</a></button>
-                            <button><a href="#bai2">Bài 2</a></button>
-                            <button><a href="#bai3">Bài 3</a></button>
-                            <button ><a href="#bai4">Bài 4</a></button>
-                            <button><a href="#bai5">Bài 5</a></button>
-                        </div>
-                        <p>
-                            Gợi ý:
-                            <br>
-                            Chia dư để tính tổng 2 ký số
-                        </p>
-                        <div class="form-group">
-                            <label>Nhập vào chữ số có 2 ký số</label>
-                            <input class="form-control" id="number">
-                        </div>
-                        <div class="text-center">
-                           <button class="btn btn-danger" id="calculate5">Tính Tổng</button>
-                        </div>    
-                       <!-- hiển thị kết quả  -->
-                       <div id="result-wrapper5" style="display: none;">
-                        <P>Tổng 2 ký số của n là : <span id="result6"></span></P>
-                       </div>
-                    </div>
+            <div class="container" style="display: none;" id="b5">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Tính ngày tháng năm</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào ngày tháng năm </p>
+                <input id="day" type="number" placeholder="Nhập ngày">
+                <input id="month" type="number" placeholder="Nhập tháng">
+                <input id="year" type="number" placeholder="Nhập năm">
+                <br>
+                <button id="calc5-1">Ngày trước</button>
+                <button id="calc5-2">Ngày mai</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Ngày hôm sau và ngày hôm trước
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result5"></span></p>
                 </div>
             </div>
+            <div class="container" style="display: none;" id="b6">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Tính ngày</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào tháng và năm bạn muốn tính ngày </p>
+                <input id="month2" type="number" placeholder="Nhập tháng">
+                <input id="year2" type="number" placeholder="Nhập năm">
+                <br>
+                <button id="calc6">Sắp xếp</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Số ngày trong 1 tháng
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result6"></span></p>
+                </div>
+            </div>
+            <div class="container" style="display: none;" id="b7">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Đọc số</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào một số </p>
+                <input id="int" type="number" placeholder="Nhập một số">
+                <br>
+                <button id="calc7">Đọc số</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Số sẽ được dịch thành chữ
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result7"></span></p>
+                </div>
+            </div>
+            <div class="container" style="display: none;" id="b8">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i>  Tìm sinh viên xa trường nhất</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Hướng dẫn sử dụng :
+                    <br>
+                    <br>
+                    Nhập vào khoảng cách của 3 sinh viên và địa điểm trường học </p>
+                <p style="font-size: 22px;">Sinh viên 1</p>
+                <input id="name1" type="text" placeholder="Nhập tên sinh viên ">
+                <input id="x1" type="number" placeholder="Nhập tọa độ x">
+                <input id="y1" type="number" placeholder="Nhập tọa độ y">
+                <br>
+                <p style="font-size: 22px;">Sinh viên 2</p>
+                <input id="name2" type="text" placeholder="Nhập tên sinh viên ">
+                <input id="x2" type="number" placeholder="Nhập tọa độ x">
+                <input id="y2" type="number" placeholder="Nhập tọa độ y">
+                <br>
+                <p style="font-size: 22px;">Sinh viên 3</p>
+                <input id="name3" type="text" placeholder="Nhập tên sinh viên ">
+                <input id="x3" type="number" placeholder="Nhập tọa độ x">
+                <input id="y3" type="number" placeholder="Nhập tọa độ y">
+                <br>
+                <p style="font-size: 22px;">Trường học</p>
+                <input id="x4" type="number" placeholder="Nhập tọa độ x">
+                <input id="y4" type="number" placeholder="Nhập tọa độ y">
+                <br>
+                <button id="calc8">Tìm</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Sinh viên xa trường học nhất
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result8"></span></p>
+                </div>
+            </div>
+            </div>
         </div>
-     </div> 
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
